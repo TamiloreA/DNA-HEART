@@ -1,0 +1,54 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #ff6a95, #ffccf9);
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Love Message Styling */
+.love-message {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+.love-message h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.love-message p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  font-style: italic;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation for the love message */
+@keyframes fadeIn {
+  0% {
+      opacity: 0.7;
+      transform: translate(-50%, -48%);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, -52%);
+  }
+}
